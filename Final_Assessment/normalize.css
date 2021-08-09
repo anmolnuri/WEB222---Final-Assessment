@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* text-align:center; */
+ /* // Line 1 */
+  display:flex;
+ /* // Line 2 */
+  flex-direction:column;
+ /* // Line 3 */
+  min-height:100vh;
+}
+
+body {
+    background-color: #EEE;
+    font-family: Calibri, sans-serif;
+    color: grey;
+    line-height: 1.5;
+    font-size: 1.2em;
+    /* width: 100vw;     */
+    /* width: 1100px; */
+    /* height: 100vh; */
+}
+
+form {
+    /* Just to center the form on the page */
+    margin: 0 auto;
+    /* width: 500px; */
+    /* To see the outline of the form */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+header li {
+    display: inline-block;
+    padding: 10px 10px;
+}
+
+header {
+    background-color: lightgrey;
+    width: 100%;
+    border-radius: 15px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: lightgrey;
+    border: 1px solid #CCC;
+    border-radius: 15px;
+}
+
+.clear {
+    clear: both;
+}
+
+nav {
+    width: 200px;
+    /* float: left; */
+}
+
+#form {
+    width: 600px;
+    /* float: left; */
+}
+
+#honesty {
+    width: 600px;
+    /* flex: 1; */
+    min-height: 85vh;
+    /* min-height: calc(100vh - 100px); */
+}
+
+#errors {
+    margin-left: 25px;
+    width: 275px;
+    /* float: left; */
+}
+
+.fleft {
+    float: left;
+}
+
+.fright {
+    float: right;
+}

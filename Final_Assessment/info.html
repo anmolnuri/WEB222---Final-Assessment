@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Anmol Nuri</title>
+  <script src="info.js"></script>
+  <link rel="stylesheet" href="./normalize.css" />
+</head>
+
+<body>
+  <header>
+    <img class="fleft" src="logo.png" width="35" alt="Raptors Logo">
+    <h1 class="fleft">Anmol Nuri</h1>
+    <div class="clear"></div>
+  </header>
+
+  <!-- The body except header and footer -->
+  <div id="container">
+
+    <!-- Side nav -->
+    <nav class="fleft">
+      <ul>
+        <li> <a href="./honesty.html">Home Page</a> </li>
+        <li> <a href="./reflection.html">Reflection</a> </li>
+      </ul>
+    </nav>
+
+    <div id="form" class="fleft">
+      <h2>Sign Up</h2>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+
+      <form action="https://httpbin.org/post" name="signup" method="post" onsubmit="return finalValidator();">
+
+
+        <input type="hidden" name="lastName" id="lastName" value="Nuri" />
+        <input type="hidden" name="studentId" id="studentId" value="139194203" />
+
+        <p>
+          First name:<br>
+          <input type="text" name="firstname" pattern="^[A-Z][a-z]+$">
+        </p>
+        <p>
+          Last name:<br>
+          <input type="text" name="lastname" pattern="^[A-Z][a-z]+$">
+        </p>
+
+        <p>
+          Email:<br>
+          <input type="email" name="email">
+        </p>
+
+        <p>
+          Username:<br>
+          <input type="text" name="username" id="username">
+        </p>
+        <p>
+          Password:<br>
+          <input type="password" name="password" id="password1" required>
+        </p>
+
+        <p>
+          Confirm password:<br>
+          <input type="password" name="password" id="password2" required>
+        </p>
+
+        <p>
+          Age:<br>
+          <input type="number" name="age" min="18" max="60" />
+        </p>
+
+        <p>
+          Education Level: <br>
+          <select name="education_level">
+            <option value="0">- select - </option>
+            <option value="1"> Technical Diploma </option>
+            <option value="2"> College Diploma </option>
+            <option value="3"> Bachelor's Degree </option>
+            <option value="4"> Master's Degree </option>
+            <option value="5"> Other </option>
+          </select>
+        </p>
+
+        <p>Education Status: <br>
+          <label> <input type="radio" name="education_status" value="Graduated"> Graduated</label>
+          <label> <input type="radio" name="education_status" value="Currently enrolled"> Currently enrolled</label>
+          <label> <input type="radio" name="education_status" value="Did not graduated"> Did not graduated</label>
+        </p>
+
+        <p>
+          <input type="submit" value="Submit">
+          <input type="reset" value="Clear" onclick='clearErrors();'>
+        </p>
+
+
+      </form>
+    </div>  
+
+    <hr />
+
+    <!-- Where errors are gonna print -->
+    <div id="errors" class="fleft"></div>
+
+    <div class="clear"></div>
+    <hr>
+
+  </div>
+  
+  <footer>
+    <div class="center">
+      &copy; 2021 by Anmol Nuri, WEB222 Student.
+      <br>
+      <a href="https://github.com/anmolnuri">Visit my Github</a>
+      
+    </div>
+  </footer>
+</body>
+
+</html>
